@@ -1,0 +1,125 @@
+{
+  "name": "mind-image-compiler-node",
+  "version": "1.0.0",
+  "description": "Node Application of MindAR.js Image Compiler. Created by @DDincBrent and @JustBarnt",
+  "main": "image-compile.js",
+  "scripts": {
+    "test": "node image-compiler.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "module"
+    },
+    "rules": {
+      "arrow-spacing": [
+        "warn",
+        {
+          "before": true,
+          "after": true
+        }
+      ],
+      "brace-style": [
+        "error",
+        "allman",
+        {
+          "allowSingleLine": true
+        }
+      ],
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
+      "comma-spacing": [
+        "error",
+        {
+          "after": true
+        }
+      ],
+      "curly": [
+        "error",
+        "multi",
+        "consistent"
+      ],
+      "dot-location": [
+        "error",
+        "property"
+      ],
+      "handle-callback-err": "off",
+      "indent": [
+        "warn",
+        "tab"
+      ],
+      "max-nested-callbacks": [
+        "error",
+        {
+          "max": 4
+        }
+      ],
+      "max-statements-per-line": [
+        "error",
+        {
+          "max": 2
+        }
+      ],
+      "no-console": "off",
+      "no-empty-function": "error",
+      "no-floating-decimal": "error",
+      "no-inline-comments": "error",
+      "no-shadow": [
+        "error",
+        {
+          "allow": [
+            "err",
+            "resolve",
+            "reject"
+          ]
+        }
+      ],
+      "no-unused-vars": "warn",
+      "no-var": "warn",
+      "no-lonely-if": "off",
+      "no-undef": "off",
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "prefer-const": "warn",
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": "error",
+      "no-trailing-spaces": "off",
+      "space-before-blocks": [
+        "error",
+        "never"
+      ],
+      "space-before-function-paren": [
+        "error",
+        {
+          "anonymous": "never",
+          "named": "never",
+          "asyncArrow": "always"
+        }
+      ],
+      "space-in-parens": [
+        "error",
+        "never"
+      ],
+      "yoda": "warn"
+    }
+  },
+  "keywords": ["webar","node","nodejs","node application","js"],
+  "license": "MIT",
+  "dependencies": {
+    "@msgpack/msgpack": "^1.12.2",
+    "@tensorflow/tfjs": "^3.13.0",
+    "fs-extra": "^10.1.0"
+  }
+}
