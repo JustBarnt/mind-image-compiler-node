@@ -159,6 +159,6 @@ const _extractMatchingFeatures = async (imageList, doneCallback) => {
   return keyframes;
 }
 
-module.exports = {
-  Compiler
-}
+
+//exports.Compiler = Compiler;
+export { Compiler }
