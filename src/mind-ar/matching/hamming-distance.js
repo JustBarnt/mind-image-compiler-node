@@ -20,6 +20,4 @@ const bitCount = (v) => {
   return c;
 }
 
-module.exports = {
-  compute
-};
+export { compute as hammingCompute }

@@ -107,9 +107,4 @@ const resize = ({image, ratio}) => {
   return {data: imageData, width: width, height: height};
 }
 
-module.exports = {
-  downsampleBilinear,
-  upsampleBilinear,
-  resize,
-}
-
+export { downsampleBilinear, upsampleBilinear, resize }

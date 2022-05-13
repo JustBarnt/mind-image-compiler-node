@@ -28,6 +28,4 @@ const createRandomizer = () => {
   return randomizer;
 }
 
-module.exports = {
-  createRandomizer
-}
+export { createRandomizer }

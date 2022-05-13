@@ -1,9 +1,9 @@
-const Worker = require("./compiler.worker.js");
-const {Detector} = require('./detector/detector.js');
-const {buildImageList, buildTrackingImageList} = require('./image-list.js');
-const {build: hierarchicalClusteringBuild} = require('./matching/hierarchical-clustering.js');
-const {encode, decode} = require('@msgpack/msgpack'); //Creates Binary data for .mind file
-const tf = require('@tensorflow/tfjs');
+import Worker from './compiler.worker';
+import { Detector } from './detector/detector';
+import { buildImageList, buildTrackingImageList } from './image-list';
+import { hierarchicalClusteringBuild } from './matching/hierarchical-clustering';
+import { encode, decode } from '@msgpack/msgpack';
+import tf from '@tensorflow/tfjs';
 
 // 2.1 is @DDincBrents attempt to implement into a node application.
 const CURRENT_VERSION = 2.1;
@@ -159,6 +159,4 @@ const _extractMatchingFeatures = async (imageList, doneCallback) => {
   return keyframes;
 }
 
-
-//exports.Compiler = Compiler;
 export { Compiler }

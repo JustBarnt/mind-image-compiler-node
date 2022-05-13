@@ -1,5 +1,5 @@
-const {compute: hammingCompute} = require('./hamming-distance.js');
-const {createRandomizer} = require('../utils/randomizer.js');
+import { hammingCompute } from './hamming-distance';
+import { createRandomizer } from '../utils/randomizer';
 
 const MIN_FEATURE_PER_NODE = 16;
 const NUM_ASSIGNMENT_HYPOTHESES =  128;
@@ -114,7 +114,8 @@ const _build = (options) => {
   return node;
 }
 
-module.exports = {
-  build,
-};
+export { build as hierarchicalClusteringBuild }
+// module.exports = {
+//   build,
+// };
 
